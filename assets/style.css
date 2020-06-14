@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: hsl(234, 12%, 34%);
+  background-color: #FAFAFA;
+}
+
+.container{
+  max-width: 1140px; 
+  margin: 0 auto;
+}
+
+.descricao{
+  text-align: center;
+  padding: 50px 0;
+}
+
+.descricao .title{
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.descricao .subtitle{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.descricao .desc{
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/* CARDS */
+
+.cards{
+  height: 600px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  height: 450px;
+}
+
+.grid .card-items-1,
+.grid .card-items-2,
+.grid .card-items-3,
+.grid .card-items-4{
+  display: grid;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: 0px 3px 15px -10px black;
+}
+
+.card-items-1{
+  border-top: 4px solid hsl(180, 62%, 55%);
+  align-self: center;
+}
+
+.card-items-2{
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card-items-3{
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card-items-4{
+  border-top: 4px solid hsl(212, 86%, 64%);
+  align-self: center;
+}
+
+.grid .cards-items{
+  display: grid;
+  row-gap: 20px;
+}
+
+.grid .title-card{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.grid .image{
+  justify-self: flex-end;
+  margin-top: 30px;
+}
+
+footer{
+  display: grid;
+  justify-content: center;
+  padding: 10px 0;
+  border-top: 2px solid #fff;
+  font-weight: 300;
+}
+
+footer a{
+  text-decoration: none;
+  color: hsl(234, 12%, 34%); 
+}
+
+/* MOBILE */
+@media (min-width: 320px) and (max-width: 1024px){
+  .cards{
+    height: 1200px;
+  }
+  footer{
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .cards{
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px){
+  .grid{
+    grid-template-columns: 380px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px){
+  .grid{
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+  .descricao h1.title{
+    font-size: 23px;
+    font-weight: 300;
+  }
+
+  .descricao h1.subtitle{
+    font-size: 23px;
+  }
+
+  .descricao p.desc{
+    padding: 0 45px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
