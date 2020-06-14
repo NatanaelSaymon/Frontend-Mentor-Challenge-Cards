@@ -17,6 +17,7 @@ body{
 }
 
 .descricao{
+  display: grid;
   text-align: center;
   padding: 50px 0;
 }
@@ -32,6 +33,7 @@ body{
 }
 
 .descricao .desc{
+  /* width: 500px; */
   font-weight: 300;
   margin-top: 20px;
 }
@@ -123,6 +125,19 @@ footer a{
 }
 
 @media (min-width: 425px) and (max-width: 768px){
+  section.descricao .title{
+    font-size: 27px;
+  }
+
+  section.descricao .subtitle{
+    font-size: 27px;
+  }
+
+  section.descricao .desc{
+    padding: 0 50px;
+    font-size: 13px;
+  }
+
   .grid{
     grid-template-columns: 380px;
     justify-content: center;
@@ -146,9 +161,9 @@ footer a{
     font-size: 23px;
   }
 
-  .descricao p.desc{
-    padding: 0 45px;
-    font-size: 15px;
+  .descricao .desc{
+    padding: 0 20px;
+    font-size: 12px;
     text-align: center;
   }
 }
